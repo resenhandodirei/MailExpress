@@ -1,0 +1,25 @@
+{
+  "name": "tasksinbackground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scripts": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0",
+    "password-generator": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "sucrase": "^3.35.0"
+  }
+}
