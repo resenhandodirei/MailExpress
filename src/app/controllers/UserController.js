@@ -13,6 +13,8 @@ export default {
 
         };
 
+
+
         await Mail.sendMail({
             from: 'DIO <contato@dio.com.br>',
             to: `${name} <${email}>`, 
