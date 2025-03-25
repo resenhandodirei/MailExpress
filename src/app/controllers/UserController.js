@@ -1,5 +1,5 @@
 import passwordGenerator from 'password-generator';
-import Mail from '../lib/Mail';
+import Mail from '../lib/Mail.js';
 
 export default {
     async store(req, res) {
