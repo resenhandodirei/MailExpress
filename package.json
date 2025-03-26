@@ -5,6 +5,7 @@
   "scripts": {
     "scripts": "nodemon src/server.js",
     "start": "node src/server.js",
+    "queue": "nodemon src/queue.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +14,9 @@
   "type": "module",
   "description": "",
   "dependencies": {
+    "bull": "^4.16.5",
+    "bull-board": "^2.1.3",
+    "bullmq": "^5.44.4",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodemailer": "^6.10.0",
