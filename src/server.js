@@ -5,6 +5,16 @@ import { createBullBoard } from 'bull-board';
 
 const app = express();
 
+app.use(express.json());
+
+ 
+app.get('/users', (req, res) => {
+    res.send('Rota GET funcionando! 🚀');
+});
+
+app.post('/users', UserController.store); 
+
+
 // Criando a UI do Bull Board
 const { router } = createBullBoard([
     new BullAdapter(Queue.queues[0].bull), // Verifique se há filas disponíveis antes de acessar
@@ -12,6 +22,6 @@ const { router } = createBullBoard([
 
 app.use('/admin/queues', router);
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
+app.listen(process.env.PORT, () => {
+    console.log(`Server running on the ${process.env.PORT}`)
 });
