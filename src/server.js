@@ -12,8 +12,7 @@ app.get('/users', (req, res) => {
     res.send('Rota GET funcionando! 🚀');
 });
 
-app.post('/users', UserController.store); 
-
+//app.post('/users', UserController.store); 
 
 // Criando a UI do Bull Board
 const { router } = createBullBoard([
